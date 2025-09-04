@@ -1,0 +1,26 @@
+/*for Loop in Java
+Concept
+
+A for loop is used when the number of iterations is known in advance.
+It combines initialization, condition, and increment/decrement in a single line.
+
+Syntax
+for (initialization; condition; increment/decrement) {
+    // code to execute
+}
+
+Examples
+Sum of First 10 Natural Numbers*/
+public class ForExample2 {
+    public static void main(String[] args) {
+        int sum = 0;
+        for (int i = 1; i <= 10; i++) {
+            sum += i; // add each number to sum
+        }
+        System.out.println("Sum = " + sum);
+    }
+}
+
+
+
+// output Sum = 55
