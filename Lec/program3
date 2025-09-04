@@ -1,0 +1,33 @@
+/*do-while Loop in Java
+Concept
+
+A do-while loop executes the block of code at least once, even if the condition is false initially.
+
+The condition is checked after execution.
+
+Syntax
+do {
+    // code to execute
+} while (condition);*/
+
+Examples
+import java.util.Scanner;
+
+public class MAIN {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int n = sc.nextInt(); // input number
+        int i = 1;            // counter
+        long fact = 1;        // factorial result (use long for larger numbers)
+
+        // do-while loop to calculate factorial
+        do {
+            fact *= i;  // multiply current value
+            i++;        // increment
+        } while (i <= n);
+
+        System.out.println("Factorial of " + n + " is: " + fact);
+        sc.close();
+    }
+}
