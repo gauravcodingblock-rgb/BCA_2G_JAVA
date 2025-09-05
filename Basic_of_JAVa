@@ -1,0 +1,30 @@
+package BCA2G1;
+
+public class DATATYPES {
+    public static void main(String[] args){
+    int x=1;// interger variable
+    System.out.println(x);
+    byte x1=122;
+    short s=77;
+    System.out.println(s);
+    System.out.println(x1);
+    long l=89999;
+    System.out.println(l);
+    System.out.println(x1);
+    long l1=89999;
+    System.out.println(l1);
+    float y=1.8777f;
+    System.out.println(y);
+    double  d=8.888997;
+    System.out.println(d);
+    char c='A';
+    System.out.println(c);
+    boolean b=false;
+    System.out.println(b);
+  
+
+
+
+    }
+    
+}
