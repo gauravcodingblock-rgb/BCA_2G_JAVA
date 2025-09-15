@@ -1,0 +1,31 @@
+package BCA2G;
+public class Lec4_2DArray {
+    public static void main(String[] args) {
+    int[] arr= new int[10];
+    arr[0]=1;
+    arr[1]=4;
+    arr[2]=9;
+    arr[6]=15;
+   System.out.println(arr[6]);
+   int[] arr1={10,20,30,40,50};
+   for(int x:arr1){
+    System.out.print(x+" ");
+   }
+   float[] arr4={1.2f,1.6f,9.8f,9.9f};
+  // System.out.println(arr4[2]);
+   char[] arr5=new char[10];
+   arr5[0]='a';
+   arr5[1]='b';
+   arr5[3]='U';
+   arr5[8]='8';
+   boolean[] arr6={false,false,true,true,true,false};
+   //arr6[2]="Amit";
+
+
+   System.out.println();
+   System.out.println(arr6[2]);
+
+        
+    }
+    
+}
