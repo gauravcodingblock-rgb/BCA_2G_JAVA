@@ -1,0 +1,129 @@
+package BCA2G1;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args){
+        int s1,s2,s3;
+        Scanner scn=new Scanner(System.in);
+        s1=scn.nextInt();
+        s2=scn.nextInt();
+        s3=scn.nextInt();
+        int total_marks=s1+s2+s3;
+        System.out.println("total marks "+total_marks);
+        float av=(s1+s2+s3)/3.0f;
+         System.out.println("average  "+av);
+        if(av>=90){
+            System.out.println("Grade A ");
+        }
+        
+        else if(av<90 && av>=80){
+             System.out.println("Grade B");
+
+        }
+          else if(av<80 && av>=70){
+             System.out.println(" Grade C");
+            
+        }
+        else if(av<70 && av>=60){
+             System.out.println(" Grade D");
+            
+        }
+        else{
+             System.out.println("Fail ");
+        ------------ maximum in 3 number
+        int b1=89,b2=77,b3=98;
+        if(b1>b2 && b1>b3){
+            System.out.println(b1);
+        }
+        else if(b2>b3){
+             System.out.println(b2);
+
+        }
+        else{
+             System.out.println(b3);
+
+        }
+        Scanner scn=new Scanner(System.in);
+        int age=scn.nextInt();
+        boolean membership=scn.nextBoolean();
+        int price=0;
+        if(age<12){
+            price=5;
+        }
+         if(age>=12 && age<=64){
+            price=10;
+
+        }
+        else{
+            price =7;
+        }
+        if(membership){
+            price-=2;
+        }
+        System.out.println("Ticket price is "+price);
+        int day=2;
+        switch (day) {
+            case 1:
+                System.out.println("Monday ");
+                break;
+            case 2:
+                System.out.println("Tuesday ");
+                break;
+             case 3:
+                System.out.println("Wednesday ");
+                break;
+            case 4:
+                System.out.println("Thursday ");
+                break;
+             case 5:
+                System.out.println("Friday ");
+                break;
+            case 6:
+                System.out.println("Saturday ");
+                break;
+            case 7:
+                System.out.println("Sunsay ");
+                break;
+            default:
+               System.out.println("Invalid value allow between 1 to 7 ");
+        }
+        long res=1;
+        for(int i=1; i<=6; i++){
+            res=(res*i);
+
+        }
+        System.out.println(res);
+
+        int count=1;
+        while (count<=3) {
+            System.out.println("Please  Enter 4 digit password");
+            Scanner scn =new Scanner(System.in);
+            int pass=scn.nextInt();
+            int currpass=9234;
+            if(pass==currpass){
+                 System.out.println("Grant Access");
+                 break;
+
+            }
+            else if(count<3){
+                 System.out.println("please enter correct password");
+                 System.out.println("Attempt left"+(3-count));
+                 
+
+            }else{
+                  System.out.println("System is locked");
+
+            }
+            count+=1;
+
+            
+        }
+
+
+
+
+
+
+        }
+    }
