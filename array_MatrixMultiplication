@@ -1,0 +1,30 @@
+package BCA2G;
+
+public class Lec8 {
+    public static void main(String[] args) {
+        int arr1[][] = { {1, 2}, {3, 4} };      // 2x2
+        int arr2[][] = { {4, 2, 1}, {0, 1, 2} }; // 2x3
+
+        int res[][] = new int[arr1.length][arr2[0].length]; // 2x3
+
+        // Matrix multiplication
+        for (int i = 0; i < arr1.length; i++) {              // rows of arr1
+            for (int j = 0; j < arr2[0].length; j++) {       // cols of arr2
+                int sum = 0;
+                for (int k = 0; k < arr1[0].length; k++) {   // cols of arr1 = rows of arr2
+                    sum += arr1[i][k] * arr2[k][j];
+                }
+                res[i][j] = sum;
+            }
+        }
+
+        // Print result
+        System.out.println("Result Matrix:");
+        for (int i = 0; i < res.length; i++) {
+            for (int j = 0; j < res[0].length; j++) {
+                System.out.print(res[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
