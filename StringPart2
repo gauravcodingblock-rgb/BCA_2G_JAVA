@@ -1,0 +1,35 @@
+package BCA2G;
+import java.util.*;
+
+public class StringPart2 {
+    public static void main(String[] args){
+        String name="rajan";
+        String name1="rajan";
+        String name3=new String("rajan");
+        if(name1==name3){
+
+            System.out.println("I am same");
+        }
+        if(name1.equals(name)){
+          System.out.println("I am same as text");
+       }
+
+        char[] str=name.toCharArray();
+         for(int i=0; i<str.length; i++){
+             System.out.print(str[i]+" ");
+        }
+        StringBuffer x=new StringBuffer("abcd");
+        x.append("efg");
+        System.out.println(x);
+        StringBuilder y=new StringBuilder("Charla");
+        y.append("UP");
+        System.out.println(y);
+        
+
+
+
+
+
+    }
+    
+}
